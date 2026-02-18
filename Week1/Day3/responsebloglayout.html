@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Blog Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .blog-card {
+            background-color: white;
+            border: 2px solid #ddd;
+            padding: 20px;
+            flex: 1 1 calc(33.33% - 40px);
+            box-sizing: border-box;
+        }
+
+        .blog-card h3 {
+            color: #333;
+        }
+
+        .blog-card p {
+            color: #666;
+        }
+
+        .blog-card button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .blog-card button:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 900px) {
+            .blog-card {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .blog-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Blog</h1>
+</header>
+
+<div class="container">
+    <div class="blog-card">
+        <h3>Web Development</h3>
+        <p>Learn the basics of HTML, CSS, and JavaScript to build modern websites.</p>
+        <button>Read More</button>
+    </div>
+
+    <div class="blog-card">
+        <h3>Programming Tips</h3>
+        <p>Improve your coding skills with useful programming practices and tricks.</p>
+        <button>Read More</button>
+    </div>
+
+    <div class="blog-card">
+        <h3>Technology News</h3>
+        <p>Stay updated with the latest trends in technology and innovation.</p>
+        <button>Read More</button>
+    </div>
+
+    <div class="blog-card">
+        <h3>Career Guidance</h3>
+        <p>Get tips and advice to grow your career in the IT industry.</p>
+        <button>Read More</button>
+    </div>
+</div>
+
+</body>
+</html>
